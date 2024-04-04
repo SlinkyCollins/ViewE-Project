@@ -1,0 +1,47 @@
+.image-shape-container{
+  position: relative;
+  display: inline-block;
+}
+
+.background-shape{
+  position: absolute;
+  background-color: #6D1830;
+  width: 488px;
+  height: 488px;
+  border: 4px 0px 0px 4px solid #FFF9F2;
+  border-radius: 10px;
+  z-index: -1;
+}
+
+#side-image{
+  position: absolute;
+  top: 50%;
+  left: 130px;
+  transform: translateY(-50%);
+  max-height: 100%;
+  display: block;
+  max-width: 100%;
+}
+
+#device-image{
+  padding: 0px 0px 0px 250px;
+  margin-top: 50px;
+  margin-left: 60px;
+  width: 550px;
+  height: 650px;
+  object-fit: cover;
+  display: block;
+  max-width: 100%;
+}
+
+
+
+
+
+
+
+ <div class="image-shape-container">
+            <div class="background-shape"></div>
+            <img src="Images/Yes.png" alt="" id="device-image">
+            <img src="Images/image 5.png" alt="" id="side-image">
+          </div>

@@ -1,0 +1,47 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.stacked-container{
+    position: relative;
+    display: flex;
+    flex-direction: column; /*stacks pairs vertically*/
+}
+
+.image-pair {
+    display: flex;
+}
+
+.image-pair img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    /* margin: 5px; */
+}
+
+.image-container p{
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    font-size: 16px;
+    /* color: #fff; */
+}
+
+.spacer{
+    height: 20px;
+}
+
+.stacked-container::before {
+    content: "";
+    position: absolute;
+    background-color: #e0e0e0;
+    width: 220px;
+    height: 220px;
+    z-index: -1;
+}

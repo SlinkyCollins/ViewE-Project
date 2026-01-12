@@ -24,5 +24,10 @@ The goal of this project was to translate a provided **Figma design** into a fun
 - Responsive design using CSS media queries
 - Ability to convert UI designs into real web pages
 
+## 🎨 Design Reference
+The UI for this project was implemented based on a provided Figma design:
+
+- Figma Design: [View Figma File](https://www.figma.com/design/HIWpQvXcwFNgp0UUbCUp6Q/SCUUDU?node-id=54-126&p=f&t=Ux4aVdnCGEwjXjD6-0)
+
 ## 📌 Notes
 This is a foundational project meant to demonstrate core front-end basics. More advanced functionality and interactivity are covered in later levels of the program.

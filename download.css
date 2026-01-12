@@ -501,37 +501,80 @@
   cursor: not-allowed;
 }
 
+/* ===== INFO-BOX - Mobile First ===== */
 .info-box {
   background: #14394c;
-  height: 280px;
-  margin-left: 120px;
-  margin-right: 120px;
-  padding: 65px;
+  height: auto;
+  min-height: 200px;
+  margin: 20px;
+  padding: 30px 20px;
   border-radius: 10px;
-  top: 900px;
 }
+
 #Icon {
   background: #fff;
   border: 2px solid #fff;
   border-radius: 500px;
-  padding: 12px;
-  width: 44px;
-  height: 44px;
+  padding: 10px;
+  width: 40px;
+  height: 40px;
   object-fit: cover;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
+
 .info-box > p {
   color: #fff;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
-  line-height: 25px;
+  line-height: 22px;
   font-family: sans-serif;
   text-align: center;
-  text-align: justify;
   letter-spacing: 0.5px;
+}
+
+/* Tablet - Info Box */
+@media screen and (min-width: 768px) {
+  .info-box {
+    margin: 40px 60px;
+    padding: 45px 40px;
+  }
+  
+  #Icon {
+    width: 42px;
+    height: 42px;
+    padding: 11px;
+    margin-bottom: 30px;
+  }
+  
+  .info-box > p {
+    font-size: 15px;
+    line-height: 24px;
+  }
+}
+
+/* Desktop - Info Box */
+@media screen and (min-width: 992px) {
+  .info-box {
+    margin: 0 120px;
+    padding: 65px;
+    min-height: 280px;
+  }
+  
+  #Icon {
+    width: 44px;
+    height: 44px;
+    padding: 12px;
+    margin-bottom: 40px;
+  }
+  
+  .info-box > p {
+    font-size: 16px;
+    line-height: 25px;
+    text-align: justify;
+  }
 }
 .FAQs {
   padding: 100px 0px 100px 0px;
@@ -567,7 +610,7 @@
 input[type="radio"] {
   display: none; /*hide the radio button because it does not look beautiful */
 }
-label {
+.accordion label {
   display: block;
   padding: 32px;
   color: white;
@@ -578,7 +621,7 @@ label {
   line-height: 28px;
   font-size: 22px;
 }
-label img {
+.accordion label img {
   width: 10px;
   height: 5px;
   top: 13px;

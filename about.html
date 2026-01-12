@@ -10,36 +10,37 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <img src="Images/image 17.png" alt="" class="container-fluid-img" />
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <nav class="navbar">
+        <div class="nav-container">
+          <img src="Images/image 17.png" alt="Logo" class="nav-logo" />
+          
+          <!-- Checkbox for toggle (hidden) -->
+          <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox" />
+          
+          <!-- Hamburger icon (label for checkbox) -->
+          <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </label>
+          
+          <!-- Navigation menu -->
+          <div class="nav-menu">
+            <ul class="nav-list">
               <li class="nav-item">
-                <a class="nav-link text-black" aria-current="page" href="homepage.html">Home</a>
+                <a class="nav-link" href="index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active text-danger text-decoration-underline" href="about.html">About</a>
+                <a class="nav-link active" href="about.html">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-black" href="blog.html">Blog</a>
+                <a class="nav-link" href="blog.html">Blog</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-black" href="download.html">Download</a>
+                <a class="nav-link" href="download.html">Download</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-black" href="contact.html">Contact</a>
+                <a class="nav-link" href="contact.html">Contact</a>
               </li>
             </ul>
             <button type="button" class="nav-btn">Download Now</button>
